@@ -6,6 +6,7 @@ export default async function Home() {
   ]);
 
   const [genres] = await Promise.all([genresResponse.json()]);
+  console.log(genres);
 
   return <HeaderClient initialData={{ genres }} />;
 }
